@@ -1,0 +1,99 @@
+{
+  "captured_at_utc": "2026-10-01T18:57:21+00:00",
+  "measurement": "Single sequential observation per method; elapsed time includes connection setup.",
+  "clusters": [
+    {
+      "cluster": "devnet",
+      "endpoint": "https://api.devnet.solana.com",
+      "status": "PASS",
+      "calls": [
+        {
+          "method": "getHealth",
+          "ok": true,
+          "result": "ok",
+          "error": null,
+          "elapsed_ms": 710.8
+        },
+        {
+          "method": "getSlot",
+          "ok": true,
+          "result": 506371999,
+          "error": null,
+          "elapsed_ms": 642.9
+        },
+        {
+          "method": "getVersion",
+          "ok": true,
+          "result": {
+            "feature-set": 3383571666,
+            "solana-core": "4.3.0"
+          },
+          "error": null,
+          "elapsed_ms": 600.0
+        }
+      ]
+    },
+    {
+      "cluster": "testnet",
+      "endpoint": "https://api.testnet.solana.com",
+      "status": "PASS",
+      "calls": [
+        {
+          "method": "getHealth",
+          "ok": true,
+          "result": "ok",
+          "error": null,
+          "elapsed_ms": 631.7
+        },
+        {
+          "method": "getSlot",
+          "ok": true,
+          "result": 447380814,
+          "error": null,
+          "elapsed_ms": 605.5
+        },
+        {
+          "method": "getVersion",
+          "ok": true,
+          "result": {
+            "feature-set": 1855282951,
+            "solana-core": "4.4.0-beta.0"
+          },
+          "error": null,
+          "elapsed_ms": 609.0
+        }
+      ]
+    },
+    {
+      "cluster": "mainnet-beta",
+      "endpoint": "https://api.mainnet-beta.solana.com",
+      "status": "PASS",
+      "calls": [
+        {
+          "method": "getHealth",
+          "ok": true,
+          "result": "ok",
+          "error": null,
+          "elapsed_ms": 500.7
+        },
+        {
+          "method": "getSlot",
+          "ok": true,
+          "result": 452374543,
+          "error": null,
+          "elapsed_ms": 497.3
+        },
+        {
+          "method": "getVersion",
+          "ok": true,
+          "result": {
+            "feature-set": 3383571666,
+            "solana-core": "4.3.0"
+          },
+          "error": null,
+          "elapsed_ms": 521.4
+        }
+      ]
+    }
+  ]
+}

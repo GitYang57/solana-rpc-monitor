@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solana RPC Snapshot</title><style>
+*{box-sizing:border-box}body{margin:0;background:#101522;color:#edf3ff;font:16px system-ui,sans-serif}
+main{max-width:1120px;margin:auto;padding:48px 28px}.eyebrow{letter-spacing:.14em;color:#84e6cb;font-size:12px;font-weight:700}
+h1{font-size:clamp(32px,5vw,52px);margin:12px 0}.intro{max-width:750px;color:#b8c5da;line-height:1.7}
+.summary{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:20px 0 28px;color:#bac7dc}
+.cards{display:grid;gap:20px}article{background:#1b2435;border:1px solid #34435b;border-radius:16px;padding:24px}
+.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}h2{margin:0;font-size:23px}
+.badge{border-radius:20px;padding:6px 12px;font-size:12px;font-weight:700}.pass{color:#a6f3d8;background:#1b4a42}.failed{color:#ffe1af;background:#57472e}
+.endpoint{color:#9fafc6;font-size:14px;overflow-wrap:anywhere}.metrics{display:flex;gap:48px;flex-wrap:wrap;margin:24px 0}
+small{display:block;color:#9fafc6}strong{display:block;font-size:24px;margin-top:8px}
+table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}th,td{text-align:left;padding:12px 8px;border-top:1px solid #34435b;overflow-wrap:anywhere}th{color:#9fafc6}
+.note{margin-top:28px;background:#182031;border-left:3px solid #84e6cb;padding:18px;color:#b8c5da;line-height:1.7}
+footer{margin-top:24px;color:#8da0bb;font-size:13px}a{color:#84e6cb}
+</style></head><body><main><div class="eyebrow">PYTHON · PUBLIC DATA · ONE-SHOT REPORT</div>
+<h1>Solana RPC Snapshot</h1><p class="intro">A lightweight check of public Solana endpoints. Inspect node-reported health, finalized slot, software version and request elapsed time in one report.</p>
+<div class="summary"><span>3/3 endpoints passed all three checks</span><span>Captured: 2026-10-01T18:57:21+00:00</span></div>
+<section class="cards"><article><div class="card-head"><h2>devnet</h2>
+            <span class="badge pass">PASS</span></div>
+            <p class="endpoint">https://api.devnet.solana.com</p>
+            <div class="metrics"><div><small>Finalized slot</small><strong>506,371,999</strong></div>
+            <div><small>Solana core</small><strong>4.3.0</strong></div></div>
+            <table><thead><tr><th>RPC method</th><th>Elapsed</th><th>Result</th></tr></thead>
+            <tbody><tr><td>getHealth</td><td>710.8 ms</td><td>OK</td></tr><tr><td>getSlot</td><td>642.9 ms</td><td>OK</td></tr><tr><td>getVersion</td><td>600.0 ms</td><td>OK</td></tr></tbody></table></article><article><div class="card-head"><h2>testnet</h2>
+            <span class="badge pass">PASS</span></div>
+            <p class="endpoint">https://api.testnet.solana.com</p>
+            <div class="metrics"><div><small>Finalized slot</small><strong>447,380,814</strong></div>
+            <div><small>Solana core</small><strong>4.4.0-beta.0</strong></div></div>
+            <table><thead><tr><th>RPC method</th><th>Elapsed</th><th>Result</th></tr></thead>
+            <tbody><tr><td>getHealth</td><td>631.7 ms</td><td>OK</td></tr><tr><td>getSlot</td><td>605.5 ms</td><td>OK</td></tr><tr><td>getVersion</td><td>609.0 ms</td><td>OK</td></tr></tbody></table></article><article><div class="card-head"><h2>mainnet-beta</h2>
+            <span class="badge pass">PASS</span></div>
+            <p class="endpoint">https://api.mainnet-beta.solana.com</p>
+            <div class="metrics"><div><small>Finalized slot</small><strong>452,374,543</strong></div>
+            <div><small>Solana core</small><strong>4.3.0</strong></div></div>
+            <table><thead><tr><th>RPC method</th><th>Elapsed</th><th>Result</th></tr></thead>
+            <tbody><tr><td>getHealth</td><td>500.7 ms</td><td>OK</td></tr><tr><td>getSlot</td><td>497.3 ms</td><td>OK</td></tr><tr><td>getVersion</td><td>521.4 ms</td><td>OK</td></tr></tbody></table></article></section>
+<div class="note"><b>How to read this report</b><br>This is a single observation from the machine running the tool, not an uptime guarantee or a network-wide health assessment. A failed check may indicate local connectivity, a rate limit or an endpoint issue. Request elapsed time includes connection setup; different clusters' slots should not be compared.</div>
+<footer>Read-only RPC queries · No wallet or API key needed · Python standard library<br>
+<a href="https://solana.com/docs/rpc/http/gethealth">Solana RPC documentation</a></footer>
+</main></body></html>
